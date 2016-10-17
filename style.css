@@ -1,14 +1,30 @@
 body {
-  background-color: black;
+  background-image: url("images/HarlemRen.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Header*/
+header {
+  width: auto;
+  height: 50px;
 }
 /*Containers*/
-#bwMantra, #buttons, #social-media {
+#bwMantra, #buttons, #social-media, #mantraBlock  {
   display: flex;
   justify-content: center;
 }
+#mantraBlock {
+  width: 450px;
+  height: 230px;
+  background-color: black;
+  opacity: .8;
+  margin: auto;
+}
 
 #bwMantra {
-  margin-top: 50px;
+  min-width: 430px;
+  min-height: 210px;
 }
 
 #buttons {
@@ -18,7 +34,7 @@ body {
 .mantra {
   text-align: center;
   font-size: 20px;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Megrim', cursive;
   color: white;
   opacity: 0.8;
 
@@ -36,6 +52,30 @@ body {
   border: 10px solid white;
   border-radius: 5px;
   padding: 5px;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Megrim', cursive;
   font-size: 15px;
+}
+
+#social-media{
+ margin-top: 80px;
+}
+
+.twitter, .instagram {
+  width: 50px;
+  height: 50px;
+  margin: 0 8px 7px;
+}
+
+footer {
+  position: fixed;
+  left: 0px;
+   bottom: 0px;
+   height: 30px;
+   width: 100%;
+   background: black;
+   display: flex;
+   justify-content: center;
+   font-family: 'Megrim', cursive;
+   color: grey;
+   padding: 5px;
 }
